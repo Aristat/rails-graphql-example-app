@@ -23,7 +23,7 @@ RSpec.describe 'search user profile', type: :graphql do
     }
 
     it 'no have access' do
-      expect(subject.success).to eq(2)
+      expect(subject.success).to eq(3)
       expect(subject.failure.present?).to be_truthy
     end
   end
